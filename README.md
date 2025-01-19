@@ -1,12 +1,18 @@
 # next-optimize
 
-Simple News project for Maximilian Schwarzmüller's Next.js 15 course on Udemy 
+Simple "Posts app" project for Maximilian Schwarzmüller's Next.js 15 course on Udemy 
 
 https://www.udemy.com/course/nextjs-react-the-complete-guide
 
 
 (Section 8)
 NextJS App Optimizations
+
+Optimize images (both from source code and user-uploaded)
+using NextJS Image Component
+
+Page Metadata
+
 
 Configure
 You need to make a .env.local file with your Cloudinary keys
