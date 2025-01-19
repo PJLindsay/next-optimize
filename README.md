@@ -13,6 +13,15 @@ using NextJS Image Component
 
 recommended way to specify image size => sizes="10vw" == approx 10% of viewport width
 
+image hosts (like Cloudinary) allow you to manipulate the image url (parameters) to trigger Cloudinary to generate multiple versions
+of your image file (and cache them)
+
+you can use quality (value between 1 and 100)
+```
+<Image loader={imageLoader} src={post.image} fill alt={post.title} quality={50}/>
+```
+You can read the docs of the cloud/image provider (eg. "Image Transformations for Developers" in Cloudinary docs)
+
 Page Metadata
 
 
