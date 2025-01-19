@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Posts from "@/components/posts";
 import { getPosts } from "@/lib/posts";
 
+// static metadata
 // must be a page or layout file, must be exported
 // useful for displaying info in search results
 export const metadata = {

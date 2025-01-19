@@ -1,12 +1,6 @@
 import Posts from "@/components/posts";
 import { getPosts } from "@/lib/posts";
 
-// static metadata
-// export const metadata = {
-//   title: "Browse all our X posts.",
-//   description: "Browse all our posts.",
-// };
-
 // dynamic metadata example
 export async function generateMetadata() {
   const posts = await getPosts();
