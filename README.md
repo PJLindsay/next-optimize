@@ -1,6 +1,6 @@
-# news-project
+# next-optimize
 
-Simple News site from Maximilian Schwarzmüller's Next.js 15 course on Udemy 
+Simple News project for Maximilian Schwarzmüller's Next.js 15 course on Udemy 
 
 https://www.udemy.com/course/nextjs-react-the-complete-guide
 
