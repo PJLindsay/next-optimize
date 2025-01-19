@@ -8,15 +8,26 @@ import LikeButton from "./like-icon";
 import { togglePostLikeStatus } from "@/actions/posts";
 
 function imageLoader(config) {
-  console.log(config);
-  return config.src;
+  // split into filename and params
+  const urlStart = config.src.split("upload/")[0];
+  const urlEnd = config.src.split("upload/")[1];
+  // by specifying width only, cloudinary will preserve the aspect ratio
+  const transformations = `w_200,q_${config.quality}`;
+  // get cloudinary to resize the image with our determined transformations
+  return `${urlStart}upload/${transformations}/${urlEnd}`;
 }
 
 function Post({ post, action }) {
   return (
     <article className="post">
       <div className="post-image">
-        <Image loader={imageLoader} src={post.image} fill alt={post.title} quality={50}/>
+        <Image
+          loader={imageLoader}
+          src={post.image}
+          fill
+          alt={post.title}
+          quality={50}
+        />
       </div>
       <div className="post-content">
         <header>
