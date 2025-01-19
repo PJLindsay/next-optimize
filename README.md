@@ -11,6 +11,8 @@ NextJS App Optimizations
 Optimize images (both from source code and user-uploaded)
 using NextJS Image Component
 
+recommended way to specify image size => sizes="10vw" == approx 10% of viewport width
+
 Page Metadata
 
 
